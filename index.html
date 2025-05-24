@@ -1,0 +1,143 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rolls-Royce | Luxury in Motion</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Rolls-Royce</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Models</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="craftsmen.html">Craftsmanship</a></li>
+        <li><a href="bespoke.html">Bespoke</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+
+      <!-- Sidebar Toggle Button -->
+      
+    </nav>
+
+ 
+    <div class="hero-text">
+      <h1>Luxury in MOMENT</h1>
+      <p>Where elegance meets engineering</p>
+    </div>
+  </header>
+
+  <!-- Showcase Section -->
+  <section class="showcase">
+    <div class="image-container">
+      <img src="original (1).jpeg" alt="Rolls-Royce Showcase" />
+      <div class="image-caption">
+        <h2>Crafted Perfection</h2>
+        <p>Every line, every curve – art in motion.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Model Slider Section -->
+  <section class="model-slider-section">
+    <h2 class="section-title">Our Models</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="q.webp" alt="Phantom">
+          <div class="caption">Phantom Extended</div>
+        </div>
+        <div class="slide">
+          <img src="w.webp" alt="Ghost">
+          <div class="caption">Ghost Extended</div>
+        </div>
+        <div class="slide">
+          <img src="e.webp" alt="Cullinan">
+          <div class="caption">Cullinan SUV</div>
+        </div>
+        <div class="slide">
+          <img src="cq5dam.web.1668.webp" alt="Cullinan">
+          <div class="caption">Cullinan class</div>
+      </div>
+      <div class="slide">
+        <img src="original.png" alt="Ghost">
+        <div class="caption">Ghost Phantom</div>
+    </div>
+  </section>
+
+  <!-- Luxury Feature: Crafted to Perfection -->
+  <section class="luxury-feature reveal-on-scroll">
+    <h2>Crafted to Perfection</h2>
+    <p>Every inch of a Rolls-Royce is handcrafted with meticulous attention to detail, reflecting a legacy of excellence.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Luxury Feature: Bespoke -->
+  <section class="luxury-feature reveal-on-scroll">
+    <h2>Bespoke is the Standard</h2>
+    <p>From paint to embroidery, tailor your Rolls-Royce to your vision. Luxury redefined, uniquely yours.</p>
+  </section>
+
+  <!-- Glass Section -->
+  <section class="glass-section">
+    <div class="glass-card">
+      <h3>The Legacy</h3>
+      <p>For over a century, Rolls-Royce has stood as the pinnacle of timeless automotive design and engineering brilliance.</p>
+    </div>
+    <div class="glass-card">
+      <h3>Our Vision</h3>
+      <p>To craft more than cars — to deliver statements of status, innovation, and unmatched luxury.</p>
+    </div>
+  </section>
+  <script>
+    // Scroll-based reveal animation
+    const reveals = document.querySelectorAll(".reveal-on-scroll");
+  
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+  
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < triggerBottom) {
+          el.classList.add("revealed");
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll); // Trigger on page load too
+  </script>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <p>&copy; 2025 Rolls-Royce. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/rollsroycemotorcars/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/rollsroycecars" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/rollsroycecars/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/RollsRoyceMotorCars" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
